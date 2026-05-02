@@ -1,0 +1,10 @@
+# Social media links and identifiers used by the about page and footer.
+# Documentation: https://github.com/george-gca/jekyll-socials
+
+cv_pdf: /assets/pdf/CV_Khodabakhsh.pdf
+email: skhodabakhsh@uri.edu
+github_username: shayankhodabakhsh
+linkedin_username: # add your linkedin username (e.g., shayan-khodabakhsh)
+orcid_id: # add your ORCID iD (format: 0000-0000-0000-0000)
+scholar_userid: # add your Google Scholar user ID once you create a profile
+rss_icon: false

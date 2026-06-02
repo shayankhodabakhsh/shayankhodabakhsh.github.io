@@ -4,7 +4,7 @@
 
 .home-page {
   display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
+  grid-template-columns: 245px minmax(0, 1fr);
   gap: 2rem;
   align-items: start;
   margin-top: 1.5rem;
@@ -261,7 +261,7 @@
 
   .home-profile-card {
     display: grid;
-    grid-template-columns: 170px minmax(0, 1fr);
+    grid-template-columns: 140px minmax(0, 1fr);
   }
 
   .home-profile-card__image {

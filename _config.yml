@@ -11,7 +11,7 @@ contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal site of Shayan Khodabakhsh — M.S. Electrical Engineering at the University of Rhode Island. Computer vision, multimodal sensor fusion, and machine learning for clinical movement assessment.
 footer_text: >
-  &copy; Shayan Khodabakhsh. Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: shayan khodabakhsh, electrical engineering, computer vision, EEG, BCI, machine learning, vision-language models, university of rhode island, URI
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧠 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)

@@ -60,10 +60,56 @@ latest_posts:
 
 <section class="home-section">
   <h2>Current Work</h2>
-  <ul class="work-list">
-    <li><strong>DIBS:</strong> vision-language models for ingestive-behavior coaching.</li>
-    <li><strong>TCRE EEG:</strong> methods work comparing electrode media for resting-state and VEP recordings.</li>
-    <li><strong>PRIME:</strong> perception for closed-loop LLM-based human-robot teaming.</li>
-    <li><strong>EEG + motion capture:</strong> synchronized acquisition for grasping and reaching analysis.</li>
-  </ul>
+  <div class="work-list">
+    <article>
+      <span>DIBS</span>
+      <h3>Vision-language models for ingestive-behavior coaching</h3>
+      <p>Fine-tuning multimodal models to jointly classify eating behavior and generate clinician-style coaching feedback.</p>
+    </article>
+    <article>
+      <span>TCRE EEG</span>
+      <h3>Electrode media comparison and VEP analysis</h3>
+      <p>Building reproducible EEG analysis pipelines for resting-state, alpha-reactivity, and visual-evoked-potential recordings.</p>
+    </article>
+    <article>
+      <span>PRIME</span>
+      <h3>Perception for LLM-based human-robot teaming</h3>
+      <p>Developing computer-vision perception modules for closed-loop cobot autonomy allocation.</p>
+    </article>
+    <article>
+      <span>EEG + Motion Capture</span>
+      <h3>Synchronized movement decoding</h3>
+      <p>Aligning high-density EEG with optical motion capture for grasping and reaching analysis.</p>
+    </article>
+  </div>
+</section>
+
+<section class="home-section">
+  <h2>Toolkit</h2>
+  <div class="toolkit-grid">
+    <div>
+      <strong>Machine Learning</strong>
+      <p>PyTorch, Hugging Face, LoRA fine-tuning, scikit-learn</p>
+    </div>
+    <div>
+      <strong>Computer Vision</strong>
+      <p>OpenCV, YOLO, segmentation, pose estimation, video analysis</p>
+    </div>
+    <div>
+      <strong>Signals</strong>
+      <p>MNE, EEG preprocessing, EMG analysis, spectral features</p>
+    </div>
+    <div>
+      <strong>Systems</strong>
+      <p>Python pipelines, data synchronization, experiment tooling</p>
+    </div>
+  </div>
+</section>
+
+<section class="home-section contact-panel">
+  <div>
+    <h2>Contact</h2>
+    <p>For research collaborations, project questions, or shared interests in ML for clinical sensing, email is the best way to reach me.</p>
+  </div>
+  <a class="home-action primary" href="mailto:skhodabakhsh@uri.edu">skhodabakhsh@uri.edu</a>
 </section>

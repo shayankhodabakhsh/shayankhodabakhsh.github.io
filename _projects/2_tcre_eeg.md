@@ -6,6 +6,7 @@ img:
 importance: 2
 category: research
 related_publications: false
+github: https://github.com/shayankhodabakhsh/Tripolar_EEG
 ---
 
 A methods/pilot study comparing three Tripolar Concentric Ring Electrode (TCRE) configurations — **Paste**, **Gel**, and **saline-soaked Felt** — on resting-state and visual-evoked-potential (VEP) recordings. Paste serves as the cross-setup bridge between the two acquisition systems.
@@ -17,4 +18,6 @@ A methods/pilot study comparing three Tripolar Concentric Ring Electrode (TCRE) 
 - A three-variant preprocessing sensitivity analysis to verify that conclusions are not driven by the choice of pipeline.
 - Per-subject VEP diagnostics that informed cohort and exclusion decisions for the manuscript.
 
-Manuscript in preparation for *Sensors* (MDPI). Joint work with Dr. Walter Besio (URI ECBE).
+Manuscript in preparation for _Sensors_ (MDPI). Joint work with Dr. Walter Besio (URI ECBE).
+
+**[GitHub →](https://github.com/shayankhodabakhsh/Tripolar_EEG)**

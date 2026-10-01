@@ -1,0 +1,297 @@
+/* Plain academic homepage: text-first, left sidebar, single accent color. */
+
+:root {
+  --bg: #ffffff;
+  --fg: #212529;
+  --muted: #667078;
+  --link: #1a5fb4;
+  --rule: #d9dde1;
+  --tag-bg: #eaf1fb;
+  --tag-fg: #14498c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171a;
+    --fg: #e4e6e8;
+    --muted: #9aa3ab;
+    --link: #7db4f5;
+    --rule: #2c3238;
+    --tag-bg: #1b2a3d;
+    --tag-fg: #a5cdfb;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 16px 0;
+}
+
+/* Header */
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 40px;
+  padding-top: 24px;
+}
+
+.name {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.name a {
+  color: var(--fg);
+}
+
+.name a:hover {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.top nav a {
+  margin-right: 26px;
+  font-size: 1.05rem;
+}
+
+.top nav a:last-child {
+  margin-right: 0;
+}
+
+.top nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* Two-column layout */
+
+.layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 44px;
+  margin-top: 22px;
+}
+
+.side .photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4%;
+}
+
+.side h3 {
+  margin: 24px 0 6px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.side p {
+  margin: 0 0 4px;
+}
+
+.small {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.single main {
+  max-width: 860px;
+}
+
+.photo-m {
+  display: none;
+}
+
+main > p:first-child,
+.photo-m + p {
+  margin-top: 0;
+}
+
+main h1 {
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Section heads: "Recent News | All" */
+
+.sec-head {
+  margin: 0;
+  font-weight: 700;
+}
+
+.sec-head .sep {
+  font-weight: 400;
+  color: var(--muted);
+  padding: 0 4px;
+}
+
+.sec-head a {
+  font-weight: 400;
+}
+
+.sec-sub {
+  margin: 28px 0 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* News */
+
+.news-item {
+  margin-bottom: 18px;
+}
+
+.news-title {
+  font-style: italic;
+}
+
+.news-item .small {
+  margin-top: 2px;
+}
+
+/* Publications */
+
+.pub {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 4px 18px;
+  margin-bottom: 18px;
+}
+
+.pub-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding-top: 2px;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--tag-bg);
+  color: var(--tag-fg);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.pub-title {
+  font-style: italic;
+}
+
+.pub-venue {
+  color: var(--muted);
+}
+
+/* Projects */
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.project .small {
+  margin: 2px 0 8px;
+}
+
+.project p {
+  margin: 0 0 8px;
+}
+
+.project ul {
+  margin: 0 0 8px;
+  padding-left: 1.2rem;
+}
+
+.project li {
+  margin-bottom: 4px;
+}
+
+footer {
+  margin-top: 36px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Narrow screens */
+
+@media (max-width: 820px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .side .photo {
+    display: none;
+  }
+
+  .photo-m {
+    display: block;
+    float: right;
+    width: 112px;
+    height: auto;
+    margin: 2px 0 8px 16px;
+    border-radius: 6%;
+  }
+
+  .side {
+    order: 2;
+  }
+
+  .pub {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .pub-meta {
+    order: 2;
+  }
+}

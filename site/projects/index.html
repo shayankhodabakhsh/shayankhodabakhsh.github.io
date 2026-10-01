@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Shayan Khodabakhsh</title>
+  <meta name="description" content="Shayan Khodabakhsh, M.S. student in Electrical Engineering at the University of Rhode Island. Machine learning for health and behavior sensing.">
+  <meta property="og:title" content="Projects | Shayan Khodabakhsh">
+  <meta property="og:description" content="Shayan Khodabakhsh, M.S. student in Electrical Engineering at the University of Rhode Island. Machine learning for health and behavior sensing.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231a5fb4'/%3E%3Ctext x='50' y='66' font-size='46' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3ESK%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <h2 class="name"><a href="/">Shayan Khodabakhsh</a></h2>
+      <nav aria-label="Main"><a href="/publications/">Publications</a> <a href="/projects/" aria-current="page">Projects</a> <a href="/assets/pdf/CV_Khodabakhsh.pdf">CV</a> <a href="https://github.com/shayankhodabakhsh">GitHub</a></nav>
+    </header>
+    <hr>
+    <div class="single">
+      <main>
+        <h1>Projects</h1>
+        <hr>
+
+        <section class="project">
+          <h3>Vision-language models for bite measurement and eating-rate feedback</h3>
+          <p class="small">NIH-funded DIBS project, with Theodore Walls, Reza Abiri, Kathleen Melanson, and
+          collaborators at URI and UT Austin. 2026&ndash;present.</p>
+          <p>Eating-rate feedback needs bite measurements that arrive during the meal, and rules that still behave
+          sensibly when those measurements are wrong. I adapted Qwen2.5-VL with LoRA and stacked temporal attention
+          to detect bites, chewing, or neither from a single profile-view camera, using only past frames, and then
+          studied how its errors propagate into feedback.</p>
+          <ul>
+            <li>Evaluated on 29 laboratory participants, each held out in turn, with model selection restricted to
+            inner-validation participants. Mean bite-event F1 was 0.887, onset error 382 ms, and 60-second bite-rate
+            error 0.43 bites/min, versus 1.63 for a no-video baseline.</li>
+            <li>Removing temporal attention lowered event F1 by 0.034. I also compared CLIP, VideoMAE, and DINOv2
+            encoders and a linear head against the language decoder.</li>
+            <li>Detection accuracy and feedback agreement are separate questions: injected errors changed the
+            meal-long rule&rsquo;s fast/not-fast label in about 10% of evaluated seconds but changed reminders far
+            more, with disagreement above 25%.</li>
+          </ul>
+          <p class="small">Results are from recorded meals and simulation; prospective intervention evaluation is future
+          work. Submitted to <i>IEEE JBHI</i>.</p>
+        </section>
+
+        <section class="project">
+          <h3>Tripolar concentric ring electrode EEG</h3>
+          <p class="small">With Walter Besio, URI. 2026&ndash;present.</p>
+          <p>A methods and pilot comparison of saline-soaked felt, conductive gel, and paste electrode constructions
+          on resting-state and visual-evoked-potential recordings. I led the Python analysis pipeline: harmonized
+          preprocessing, scale-invariant cross-setup metrics (alpha SNR, eyes-open/eyes-closed reactivity,
+          spectrogram similarity), preprocessing sensitivity analyses, and per-subject VEP diagnostics. First-author
+          manuscript in preparation. <a href="https://github.com/shayankhodabakhsh/Tripolar_EEG">Code</a></p>
+        </section>
+
+        <section class="project">
+          <h3>EEG and motion capture for movement decoding</h3>
+          <p class="small">GNN_MOCAP_TNLAB project, URI. 2025&ndash;present.</p>
+          <p>A synchronized acquisition platform combining 32-channel g.tec EEG, OptiTrack Motive motion capture,
+          and StretchSense glove kinematics with hardware TTL triggers, plus experimenter and participant interfaces,
+          counterbalanced finger and grasp tasks, impedance monitoring, and trial-level timing and signal-quality
+          checks. Pilot analyses use low-frequency EEG, lagged regression, held-out trials, and artifact and null
+          controls to examine finger kinematics.</p>
+        </section>
+
+        <section class="project">
+          <h3>Computer vision for neuromuscular assessment</h3>
+          <p class="small">URI. 2025&ndash;present.</p>
+          <p>Markerless hand-pose analysis and vision-based assessment methods for socially assistive robotics and
+          neuromuscular rehabilitation research.</p>
+        </section>
+
+        <section class="project">
+          <h3>Earlier work: wearable sensor validation</h3>
+          <p class="small">With R. M. Chapman, URI. 2023.</p>
+          <p>Evaluated IMU-based knee-angle measurements against optical motion capture and analyzed calibration and
+          sensor-placement effects, which led to two papers (see <a href="/publications/">Publications</a>).</p>
+        </section>
+
+        <p class="sec-sub">Code</p>
+        <hr>
+        <section class="project">
+          <ul>
+            <li><a href="https://github.com/shayankhodabakhsh/YCB_YOLOv26_Robotic-Manipulation">YCB object segmentation</a>: fine-tuned
+            YOLOv26n-seg for object segmentation in images and video, to support robotic perception.</li>
+            <li><a href="https://github.com/shayankhodabakhsh/eeg-motor-intention">EEG motor-intention classification</a>: filter bank common spatial
+            patterns, mutual-information feature selection, and linear discriminant analysis for grasp-type
+            classification.</li>
+            <li><a href="https://github.com/shayankhodabakhsh/hand-pose-estimation">3D hand pose estimation from RGB</a>: a custom CNN compared with a
+            pretrained ResNet50 for regression of 21 hand joints on FreiHAND, with cross-validation.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <hr>
+      &copy; 2026 Shayan Khodabakhsh
+    </footer>
+  </div>
+</body>
+</html>

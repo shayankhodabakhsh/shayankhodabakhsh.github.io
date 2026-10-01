@@ -75,16 +75,6 @@ cv:
           - Ran preprocessing sensitivity analyses and per-subject VEP diagnostics that informed cohort and exclusion decisions for the manuscript (in preparation, Sensors MDPI).
 
       - company: Dept. of Electrical, Computer, and Biomedical Engineering, URI
-        position: Graduate Researcher (Prof. Abiri) — PRIME Closed-Loop Cobot
-        location: Kingston, RI
-        start_date: 2026-01
-        end_date: 2026-05
-        highlights:
-          - Fine-tuned YOLO-based perception on task-specific images for the closed-loop perception module of a human-robot teaming cobot.
-          - Integrated the perception module with the cobot stack and ran end-to-end task evaluation experiments.
-          - Manuscript under review.
-
-      - company: Dept. of Electrical, Computer, and Biomedical Engineering, URI
         position: Graduate Researcher — Automated Neuromuscular Assessment with Computer Vision and Robotics
         location: Kingston, RI
         start_date: 2025-09

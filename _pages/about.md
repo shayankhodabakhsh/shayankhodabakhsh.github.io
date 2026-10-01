@@ -72,11 +72,6 @@ latest_posts:
       <p>Building reproducible EEG analysis pipelines for resting-state, alpha-reactivity, and visual-evoked-potential recordings.</p>
     </article>
     <article>
-      <span>PRIME</span>
-      <h3>Perception for LLM-based human-robot teaming</h3>
-      <p>Developing computer-vision perception modules for closed-loop cobot autonomy allocation.</p>
-    </article>
-    <article>
       <span>EEG + Motion Capture</span>
       <h3>Synchronized movement decoding</h3>
       <p>Aligning high-density EEG with optical motion capture for grasping and reaching analysis.</p>

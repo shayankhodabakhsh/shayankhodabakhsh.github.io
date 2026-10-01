@@ -2,7 +2,7 @@
 layout: about
 title: home
 permalink: /
-subtitle: M.S. Electrical Engineering at URI · Computer vision, EEG, and clinical AI
+subtitle: M.S. Electrical Engineering at URI · Machine learning for health sensing
 
 profile:
   align: right
@@ -29,7 +29,7 @@ latest_posts:
 
 <div class="home-intro">
   <p class="lede">
-    I build machine-learning systems for human movement, clinical sensing, and embodied AI. My work connects computer vision, EEG, motion capture, wearable sensors, and robotics with a practical goal: measurement tools that clinicians and researchers can trust.
+    I work on machine learning for sensing human behavior and health, and on testing when those measurements can be trusted to drive decisions. My current project adapts vision-language models to measure eating behavior from video, then asks how detection errors change real-time feedback. Earlier work validated wearable sensors against motion capture.
   </p>
 
   <div class="home-actions">
@@ -44,16 +44,16 @@ latest_posts:
   <h2>Focus</h2>
   <div class="focus-grid">
     <div>
-      <h3>Vision-language coaching</h3>
-      <p>Fine-tuning multimodal models to assess ingestive behavior and generate clinician-style feedback from meal video.</p>
+      <h3>Foundation models for behavior sensing</h3>
+      <p>Adapting vision-language models to measure eating behavior from video, evaluated on held-out participants.</p>
     </div>
     <div>
-      <h3>Neural and motion decoding</h3>
-      <p>Synchronizing high-density EEG with motion capture for movement decoding and BCI-oriented analysis.</p>
+      <h3>From measurement to feedback</h3>
+      <p>Studying how detection errors change real-time feedback decisions, using error injection and closed-loop simulation.</p>
     </div>
     <div>
-      <h3>Clinical movement assessment</h3>
-      <p>Building marker-free computer-vision and sensor pipelines for rehabilitation and neuromuscular measurement.</p>
+      <h3>Neural and movement sensing</h3>
+      <p>Synchronizing EEG with motion capture for movement decoding, and markerless hand-pose assessment.</p>
     </div>
   </div>
 </section>
@@ -63,8 +63,8 @@ latest_posts:
   <div class="work-list">
     <article>
       <span>DIBS</span>
-      <h3>Vision-language models for ingestive-behavior coaching</h3>
-      <p>Fine-tuning multimodal models to jointly classify eating behavior and generate clinician-style coaching feedback.</p>
+      <h3>Vision-language models for bite measurement and feedback</h3>
+      <p>Qwen2.5-VL with temporal attention for bite detection from one camera (bite-event F1 0.887 on 29 held-out participants), plus closed-loop simulation of eating-rate feedback.</p>
     </article>
     <article>
       <span>TCRE EEG</span>
@@ -109,7 +109,7 @@ latest_posts:
 <section class="home-section contact-panel">
   <div>
     <h2>Contact</h2>
-    <p>For research collaborations, project questions, or shared interests in ML for clinical sensing, email is the best way to reach me.</p>
+    <p>For research collaborations, project questions, or shared interests in ML for health sensing, email is the best way to reach me.</p>
   </div>
   <a class="home-action primary" href="mailto:skhodabakhsh@uri.edu">skhodabakhsh@uri.edu</a>
 </section>

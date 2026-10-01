@@ -6,9 +6,10 @@ cv:
   image: ""
   summary: >
     M.S. Electrical Engineering student at the University of Rhode Island
-    working on computer vision, multimodal sensor fusion (EEG, EMG, IMU,
-    motion capture), and machine learning for clinical movement assessment.
-    Two peer-reviewed journal publications in wearable sensor validation.
+    working on machine learning for health and behavior sensing: vision-language
+    and temporal models for video and wearable signals, and how measurement
+    errors change downstream feedback decisions. Two peer-reviewed journal
+    publications in wearable sensor validation.
 
   social_networks:
     - network: GitHub
@@ -43,7 +44,6 @@ cv:
         end_date: 2022-10
         highlights:
           - "Top 5 cumulative GPA in cohort"
-          - "Thesis: Acute Effects of Lunge Exercise with Blood-Flow Restriction on Amateur Male Basketball Players"
 
       - institution: Islamic Azad University, Science and Research Branch
         location: Tehran, Iran
@@ -54,15 +54,15 @@ cv:
 
     Experience:
       - company: Dept. of Electrical, Computer, and Biomedical Engineering, URI
-        position: Graduate Researcher (Prof. Abiri) — A Vision-Language Coach for Ingestive Behaviors (NIH R01, DIBS)
+        position: Graduate Researcher (Profs. Abiri and Walls) — Vision-Language Models for Eating Microstructure and Feedback (NIH-funded, DIBS)
         location: Kingston, RI
         start_date: 2026-01
-        end_date: 2026-05
+        end_date: Present
         highlights:
-          - Fine-tuned a Qwen2.5-VL vision-language model with LoRA on profile-view meal video to jointly classify ingestive-behavior quality and generate clinician-style coaching feedback.
-          - Designed a multi-bite temporal windowing strategy capturing chewing rhythm and inter-bite pauses, improving classification accuracy over per-bite clips.
-          - Showed a single LoRA adapter on a VLM matches the classification accuracy of a prior multi-head architecture while adding language generation in one pass.
-          - First-author poster, ECBE Graduate Student Poster Competition.
+          - Developed a video-based bite measurement pipeline using the Qwen2.5-VL visual encoder, LoRA adaptation, and post-encoder temporal attention with past-only, 4-second windows.
+          - Evaluated 29 participant-held-out laboratory meals with model selection restricted to inner-validation participants; mean bite-event F1 0.887, onset MAE 382 ms, and 60-second bite-rate MAE 0.43 bites/min (1.63 for a no-video baseline).
+          - Compared temporal ablations and alternative visual encoders; assessed how missed, additional, and delayed detections affect eating-rate estimates and feedback decisions through error injection, recorded-meal replay, and closed-loop simulation.
+          - First-author manuscript submitted to IEEE JBHI; prospective intervention evaluation remains future work.
 
       - company: Dept. of Electrical, Computer, and Biomedical Engineering, URI
         position: Graduate Researcher (Prof. Besio) — Tripolar Concentric Ring Electrode (TCRE) EEG Comparison
@@ -80,7 +80,7 @@ cv:
         start_date: 2026-01
         end_date: 2026-05
         highlights:
-          - Fine-tuned YOLOv26 on task-specific image datasets for object detection and action recognition driving the closed-loop perception module of a human-robot teaming cobot.
+          - Fine-tuned YOLO-based perception on task-specific images for the closed-loop perception module of a human-robot teaming cobot.
           - Integrated the perception module with the cobot stack and ran end-to-end task evaluation experiments.
           - Manuscript under review.
 
@@ -104,15 +104,6 @@ cv:
           - Optimizing data acquisition protocols to reduce latency between cortical activity and recorded kinematic events.
           - Analyzing neural correlates of grasping and reaching movements for potential Brain-Computer Interface applications.
 
-      - company: Biomechanics and Motion Analysis Lab, URI (ALS Foundation No. 1159154)
-        position: Research Assistant (Prof. D'Andrea) — Biomechanical and Myoelectric Pattern Recognition in ALS
-        location: Kingston, RI
-        start_date: 2024-05
-        end_date: 2024-08
-        highlights:
-          - Synchronized EMG signals with gait kinematics to identify pathological movement patterns.
-          - Used Visual3D motion capture software to model joint mechanics and muscle activation timing.
-
       - company: Biomechanics and Wearable Sensors Lab, URI
         position: Research Assistant (Prof. Chapman) — Wearable Inertial Sensor Validation
         location: Kingston, RI
@@ -126,10 +117,6 @@ cv:
       - title: Dr. Thomas "Doc" Manfredi Student Research Fund Awardee
         date: 2024-05
         awarder: University of Rhode Island
-
-      - title: Finalist, Student Investigator Award and Presidential Cup Award
-        date: 2023-10
-        awarder: New England American College of Sports Medicine
 
       - title: Dr. Thomas "Doc" Manfredi Student Research Fund Awardee
         date: 2023-10
@@ -157,27 +144,12 @@ cv:
       - name: Biomedical Signal & Sensor Tools
         level: Advanced
         icon: fa-solid fa-wave-square
-        keywords: "MNE-Python, g.tec EEG, Qualisys, Motive, Visual3D, StretchSense"
-
-      - name: Statistics
-        level: Intermediate
-        icon: fa-solid fa-chart-line
-        keywords: "SPSS, Prism GraphPad, bootstrap methods"
+        keywords: "MNE-Python, g.tec EEG, Qualisys, OptiTrack Motive, StretchSense"
 
     Certificates:
       - name: Fundamentals of Deep Learning
         date: 2024-02
         issuer: NVIDIA / University of Rhode Island
-        icon: fa-solid fa-graduation-cap
-
-      - name: A Deep Understanding of Deep Learning
-        date: 2024-03
-        issuer: Udemy
-        icon: fa-solid fa-graduation-cap
-
-      - name: Master the Fourier Transformation and Its Applications
-        date: 2024-03
-        issuer: Udemy
         icon: fa-solid fa-graduation-cap
 
       - name: MATLAB Fundamentals
@@ -194,4 +166,4 @@ cv:
     Interests:
       - name: Research
         icon: fa-solid fa-microscope
-        keywords: "Computer vision, Vision-language models, EEG / BCI, Multimodal sensor fusion, Socially assistive robotics"
+        keywords: "Health and behavior sensing, Vision-language models, Temporal video understanding, Wearable sensing, EEG / BCI"

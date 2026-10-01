@@ -60,6 +60,11 @@ ninja.data = [{
           description: "Methods/pilot study comparing Paste, Gel, and saline-soaked Felt TCRE configurations on resting-state and visual-evoked-potential recordings.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_tcre_eeg/";
+            },},{id: "projects-prime-closed-loop-llm-based-cobot",
+          title: 'PRIME — Closed-Loop LLM-Based Cobot',
+          description: "Computer-vision perception module for a closed-loop human-robot teaming cobot driven by LLM-based autonomy allocation.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_prime_cobot/";
             },},{id: "projects-eeg-motion-capture-for-movement-decoding",
           title: 'EEG + Motion Capture for Movement Decoding',
           description: "Hardware synchronization of high-density g.tec EEG with optical motion capture for decoding grasping and reaching movements.",

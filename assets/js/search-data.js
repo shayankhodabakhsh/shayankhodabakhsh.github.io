@@ -47,9 +47,12 @@ ninja.data = [{
           section: "News",},{id: "news-presented-a-vision-language-coach-for-ingestive-behaviors-as-first-author-poster-at-the-ecbe-graduate-student-poster-competition-university-of-rhode-island",
           title: 'Presented “A Vision Language Coach for Ingestive Behaviors” as first-author poster at the...',
           description: "",
-          section: "News",},{id: "projects-vision-language-coach-for-ingestive-behaviors",
-          title: 'Vision-Language Coach for Ingestive Behaviors',
-          description: "Fine-tuning Qwen2.5-VL with LoRA to jointly classify eating-behavior quality and generate clinician-style coaching feedback (NIH R01 — DIBS).",
+          section: "News",},{id: "news-submitted-real-time-vision-language-models-for-behavioral-feedback-a-simulated-closed-loop-study-of-eating-rate-to-the-ieee-journal-of-biomedical-and-health-informatics-special-issue-on-ai-based-dietary-assessment",
+          title: 'Submitted “Real-time Vision-Language Models for Behavioral Feedback: A Simulated Closed-Loop Study of Eating...',
+          description: "",
+          section: "News",},{id: "projects-vision-language-models-for-bite-measurement-and-eating-rate-feedback",
+          title: 'Vision-Language Models for Bite Measurement and Eating-Rate Feedback',
+          description: "Adapting Qwen2.5-VL with temporal attention to detect bites from a single camera, then testing how detection errors change real-time feedback (NIH-funded, DIBS).",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_dibs_vlm/";
             },},{id: "projects-tripolar-eeg-three-way-electrolyte-comparison",
